@@ -1,0 +1,33 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Light', "Source Code Pro", sans-serif;
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #232323;
+}
+#game-over{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 4rem;
+    font-weight: bold;
+    -webkit-text-stroke-color: #ce3e3e;
+    -webkit-text-stroke-width: 2px;
+}
+
+#canvas{
+    background-color: #cdcdcd;
+    width: 640px;
+    height: 480px;
+}
