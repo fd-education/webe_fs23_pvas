@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#canv {
+    border: 1px solid #444444;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#info {
+    background-color: #3d3d3d;
+    color: #f0f0f0;
+    width: 50%;
+    min-width: 20rem;
+    padding: 10px;
+    text-align: center;
+    margin-top: 2rem;
+}
