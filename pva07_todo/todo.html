@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do</title>
+    <link rel="stylesheet" href="./todo.css">
+</head>
+<body>
+    <h1>To Do</h1>
+    <form>
+        <div>
+            <label for="todo-title">Title</label>
+            <input id="todo-title" type="text" />
+        </div>
+
+        <div>
+            <label for="todo-desc">Description</label>
+            <input id="todo-desc" type="text" />
+        </div>
+
+        <div>
+            <label for="todo-assignee">Assignee</label>
+            <input id="todo-assignee" type="text" />
+        </div>
+    </form>
+    <button onclick="submitTodo()">Add</button>
+
+    <div id="todo-list"></div>
+    <script src="./todo.js"></script>
+</body>
+</html>
