@@ -56,7 +56,7 @@ class Character{
     }
 
     static validate({name, meta, life, arch, mare}) {
-        // TODO: Control if those are valid
+        // Control if those are valid
         return name !== '' && meta !== '' && life !== '' && arch !== '' && mare >= this.MIN_MARE && mare <= this.MAX_MARE;
     }
 }
@@ -101,7 +101,7 @@ domFields.ranMaRe.max = mareMax
 
 // Fill the list! (clear it first)
 const fillCharList = () => {
-    // TODO: All the characters should be displayd in the according section
+    // All the characters should be displayd in the according section
     domFields.rowChar.innerHTML = ''
 
     characterList.forEach(char => {
@@ -116,20 +116,20 @@ const saveToLocalStorage = () => {
 
 // Interactivity
 domFields.btnSave.addEventListener('click', () => {
-    // TODO: Collect the values from the form
+    // Collect the values from the form
     const name = domFields.txtName.value;
     const meta = domFields.selMeta.value;
     const life = domFields.selLife.value;
     const arch = domFields.selArch.value;
     const mare = domFields.ranMaRe.value;
 
-    // TODO: validate the values
+    // validate the values
     if(name === '' || meta === '' || life === '' || arch === ''){
         alert('Please fill out all the fields!');
         return;
     }
 
-    // TODO: create a new object and add it to the list
+    // create a new object and add it to the list
     const newChar = new Character({name, meta, life, arch, mare});
     if(!Character.validate(newChar)){
         alert('Character invalid! ' + newChar);
@@ -137,11 +137,11 @@ domFields.btnSave.addEventListener('click', () => {
     };
     characterList.push(newChar);
 
-    // TODO: rerender the dom to show my list
+    // rerender the dom to show my list
     fillCharList();
     saveToLocalStorage();
 
-    // TODO: clear the form for next input
+    // clear the form for next input
     clearForm();
 });
 
