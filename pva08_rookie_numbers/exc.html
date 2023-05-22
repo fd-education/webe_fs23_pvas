@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <h2>Character Mask</h2>
+      <div class="row">
+        <div class="col-12 mb-2">
+          <label for="cName" class="form-label">Character Name</label>
+          <input type="text" class="form-control" id="cName" placeholder="Ichabold the Ignorant">
+        </div>
+        <div class="col-6 mb-2">
+          <label for="cMetatype">Metatype</label>
+          <select class="form-select" id="cMetatype">
+            <option selected value="">?</option>
+          </select>
+        </div>
+        <div class="col-6 mb-2">
+          <label for="cLifestyle">Lifestyle</label>
+          <select class="form-select" id="cLifestyle">
+            <option selected value="">?</option>
+          </select>
+        </div>
+        <div class="col-6 mb-2">
+          <label for="cArchtype">Archetyp</label>
+          <select class="form-select" id="cArchtype">
+            <option selected value="">?</option>
+          </select>
+        </div>
+        <div class="col-6 mb-2">
+          <label for="cMageRes" class="form-label">Resonanz - Magie</label>
+          <input type="range" min="0" max="5" class="form-range" id="cMageRes">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-end mt-3">
+          <input type="button" class="btn btn-success fluid" id="btnSave" value="Speichern" />
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <h2>Characters</h2>
+      <div class="btn-group mb-3 d-flex" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" id="sortAlUp">Alpha up</button>
+        <button type="button" class="btn btn-secondary" id="sortAlDw">Alpha Down</button>
+        <button type="button" class="btn btn-secondary" id="sortMaUp">Mage</button>
+        <button type="button" class="btn btn-secondary" id="sortMaDw">Resonanz</button>
+      </div>
+      <div class="row" id="rowCharacters">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="exc.js"></script>
+</body>
+</html>
