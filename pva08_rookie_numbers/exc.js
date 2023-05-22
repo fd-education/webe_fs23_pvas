@@ -134,7 +134,7 @@ domFields.btnSave.addEventListener('click', () => {
     if(!Character.validate(newChar)){
         alert('Character invalid! ' + newChar);
         return;
-    };
+    }
     characterList.push(newChar);
 
     // rerender the dom to show my list
